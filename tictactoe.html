@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> TicTacToe </title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
+        <link rel="stylesheet" href="tictactoe.css">
+    </head>
+    <body>
+        <center>
+            <div class="bg-image">
+                <label class="checkboxlabel">
+                    <input type="checkbox" id="againstBot"></input>
+                    <span>Gegen Bot?</span>
+                </label>
+                <input type="range" id="difficultySlider" min="1" max="5" value="3" step="1">Schwierigkeit</input>
+                <input type="range" id="timeSlider" min="5" max="60" value="15" step="1">Zeit Pro Zug</input>
+                <label class="checkboxlabel">
+                    <input type="checkbox" id="timeActivated" unchecked></input>
+                    <span>Zeitbegrenzung?</span>
+                </label>
+
+                <h1 id="difficulty">Schwierigkeit: mittel</h1>
+                <h1 id="timePerRound"></h1>
+                <h1 id="ergebnis">Stand: (X) 0 - 0 (O)</h1>
+                <h1 id="currentPlayer"></h1>
+
+                <div class="tictactoeboard">
+                    <button type="button" id="ttt0" class="tb" data-row="1" data-col="1" data-color="" tabindex=1></button>
+                    <button type="button" id="ttt1" class="tb" data-row="1" data-col="2" data-color="" tabindex=2></button>
+                    <button type="button" id="ttt2" class="tb" data-row="1" data-col="3" data-color="" tabindex=3></button>
+                    <button type="button" id="ttt3" class="tb" data-row="2" data-col="1" data-color="" tabindex=4></button>
+                    <button type="button" id="ttt4" class="tb" data-row="2" data-col="2" data-color="" tabindex=5></button>
+                    <button type="button" id="ttt5" class="tb" data-row="2" data-col="3" data-color="" tabindex=6></button>
+                    <button type="button" id="ttt6" class="tb" data-row="3" data-col="1" data-color="" tabindex=7></button>
+                    <button type="button" id="ttt7" class="tb" data-row="3" data-col="2" data-color="" tabindex=8></button>
+                    <button type="button" id="ttt8" class="tb" data-row="3" data-col="3" data-color="" tabindex=9></button>
+                </div>
+            </div>
+        </center>
+        <script src="tictactoe.js"></script>
+    </body>
+</html>
